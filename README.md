@@ -1,9 +1,9 @@
-# Uniswap V2
+# SpookySwap
 
-[![Actions Status](https://github.com/Uniswap/uniswap-v2-core/workflows/CI/badge.svg)](https://github.com/Uniswap/uniswap-v2-core/actions)
-[![Version](https://img.shields.io/npm/v/@uniswap/v2-core)](https://www.npmjs.com/package/@uniswap/v2-core)
 
-In-depth documentation on Uniswap V2 is available at [uniswap.org](https://uniswap.org/docs).
+These are the core contracts of SpookySwap. In-depth documentation can be found at [docs.spookyswap.finance] (https://docs.spookyswap.finance).
+
+Originally a fork of Uniswap V2, see In-depth documentation at [uniswap.org](https://uniswap.org/docs).
 
 The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/v2-core@latest/).
 

@@ -1,16 +1,17 @@
 {
-  "name": "@uniswap/v2-core",
-  "description": "🎛 Core contracts for the UniswapV2 protocol",
-  "version": "1.0.1",
-  "homepage": "https://uniswap.org",
+  "name": "@spookyswap/core",
+  "description": "🎛 Core contracts for the spookyswap protocol",
+  "version": "1.0",
+  "homepage": "https://spookyswap.finance",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v2-core"
+    "url": "https://github.com/SpookySwap/spookyswap-core"
   },
   "keywords": [
-    "uniswap",
+    "spookyswap",
     "ethereum",
-    "v2",
+    "ftm",
     "core",
     "uniswap-v2"
   ],
@@ -30,19 +31,24 @@
     "mocha": "^6.2.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
-    "solc": "0.5.16",
+    "ncp": "^2.0.0",
+    "solc": "0.6.12",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "dotenv": "^8.2.0",
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "scripts": {
     "lint": "yarn prettier ./test/*.ts --check",
     "lint:fix": "yarn prettier ./test/*.ts --write",
     "clean": "rimraf ./build/",
     "precompile": "yarn clean",
-    "compile": "waffle .waffle.json",
+    "compile": "truffle compile",
     "pretest": "yarn compile",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
-  },
-  "license": "GPL-3.0-or-later"
+    "prepublishOnly": "yarn test",
+    "deploy": "truffle migrate",
+    "deploy:ftm": "truffle migrate --network fantom",
+    "deploy:ftmtest": "truffle migrate --network fantomtest"
+  }
 }

@@ -38,7 +38,7 @@ describe('UniswapV2Factory', () => {
   })
 
   async function createPair(tokens: [string, string]) {
-    const bytecode = `0x${UniswapV2Pair.evm.bytecode.object}`
+    const bytecode = `${UniswapV2Pair.bytecode}`
     const create2Address = getCreate2Address(factory.address, tokens, bytecode)
     await expect(factory.createPair(...tokens))
       .to.emit(factory, 'PairCreated')
@@ -68,7 +68,7 @@ describe('UniswapV2Factory', () => {
   it('createPair:gas', async () => {
     const tx = await factory.createPair(...TEST_ADDRESSES)
     const receipt = await tx.wait()
-    expect(receipt.gasUsed).to.eq(2512920)
+    expect(receipt.gasUsed).to.eq(2471816) //gas lower to due more optimized solidity old: 2512920
   })
 
   it('setFeeTo', async () => {
