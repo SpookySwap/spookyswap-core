@@ -1,7 +1,7 @@
 {
   "name": "@spookyswap/core",
   "description": "🎛 Core contracts for the spookyswap protocol",
-  "version": "1.0",
+  "version": "1.1.0",
   "homepage": "https://spookyswap.finance",
   "license": "GPL-3.0-or-later",
   "repository": {
@@ -26,17 +26,16 @@
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "ethereum-waffle": "^2.4.1",
     "ethereumjs-util": "^6.2.0",
     "mocha": "^6.2.2",
+    "ncp": "^2.0.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
-    "ncp": "^2.0.0",
     "solc": "0.6.12",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3",
-    "dotenv": "^8.2.0",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "typescript": "^3.7.3"
   },
   "scripts": {
     "lint": "yarn prettier ./test/*.ts --check",
@@ -50,5 +49,8 @@
     "deploy": "truffle migrate",
     "deploy:ftm": "truffle migrate --network fantom",
     "deploy:ftmtest": "truffle migrate --network fantomtest"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6"
   }
 }
