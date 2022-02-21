@@ -30,27 +30,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/maki/Dev/SpookySwap-core/contracts/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[]},\"sources\":{\"/home/maki/Dev/SpookySwap-core/contracts/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x46385e1832a3e0ca2cce0a9b071c8546fded5cfc024585a9acdcf90dc2f8f486\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f2868733ef4f662bd5c7c049bd14531b3dd06440aaac193f5a1e780a559df326\",\"dweb:/ipfs/QmNfYChfLtoMdC71LxkbcF8G7CAGSE7BfSTvwbNZ1S3XDB\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x46385e1832a3e0ca2cce0a9b071c8546fded5cfc024585a9acdcf90dc2f8f486\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f2868733ef4f662bd5c7c049bd14531b3dd06440aaac193f5a1e780a559df326\",\"dweb:/ipfs/QmNfYChfLtoMdC71LxkbcF8G7CAGSE7BfSTvwbNZ1S3XDB\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.5.0;\n\ninterface IUniswapV2Callee {\n    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\n}\n",
-  "sourcePath": "/home/maki/Dev/SpookySwap-core/contracts/interfaces/IUniswapV2Callee.sol",
+  "sourcePath": "/Users/user/code/spookyswap-core/contracts/interfaces/IUniswapV2Callee.sol",
   "ast": {
-    "absolutePath": "/home/maki/Dev/SpookySwap-core/contracts/interfaces/IUniswapV2Callee.sol",
+    "absolutePath": "project:/contracts/interfaces/IUniswapV2Callee.sol",
     "exportedSymbols": {
       "IUniswapV2Callee": [
-        3847
+        3858
       ]
     },
-    "id": 3848,
+    "id": 3859,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3835,
+        "id": 3846,
         "literals": [
           "solidity",
           ">=",
@@ -67,9 +67,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 3847,
+        "id": 3858,
         "linearizedBaseContracts": [
-          3847
+          3858
         ],
         "name": "IUniswapV2Callee",
         "nodeType": "ContractDefinition",
@@ -78,7 +78,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "10d1e85c",
-            "id": 3846,
+            "id": 3857,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -86,17 +86,17 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 3844,
+              "id": 3855,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3837,
+                  "id": 3848,
                   "mutability": "mutable",
                   "name": "sender",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3846,
+                  "scope": 3857,
                   "src": "118:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -105,7 +105,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3836,
+                    "id": 3847,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "118:7:6",
@@ -120,12 +120,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 3839,
+                  "id": 3850,
                   "mutability": "mutable",
                   "name": "amount0",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3846,
+                  "scope": 3857,
                   "src": "134:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -134,7 +134,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3838,
+                    "id": 3849,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "134:4:6",
@@ -148,12 +148,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 3841,
+                  "id": 3852,
                   "mutability": "mutable",
                   "name": "amount1",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3846,
+                  "scope": 3857,
                   "src": "148:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -162,7 +162,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3840,
+                    "id": 3851,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "148:4:6",
@@ -176,12 +176,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 3843,
+                  "id": 3854,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3846,
+                  "scope": 3857,
                   "src": "162:19:6",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -190,7 +190,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 3842,
+                    "id": 3853,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "162:5:6",
@@ -206,19 +206,19 @@
               "src": "117:65:6"
             },
             "returnParameters": {
-              "id": 3845,
+              "id": 3856,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "191:0:6"
             },
-            "scope": 3847,
+            "scope": 3858,
             "src": "95:97:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 3848,
+        "scope": 3859,
         "src": "62:132:6"
       }
     ],
@@ -226,10 +226,10 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/maki/Dev/SpookySwap-core/contracts/interfaces/IUniswapV2Callee.sol",
+      "absolutePath": "project:/contracts/interfaces/IUniswapV2Callee.sol",
       "exportedSymbols": {
         "IUniswapV2Callee": [
-          3847
+          3858
         ]
       },
       "license": "GPL-3.0"
@@ -244,7 +244,7 @@
             ".0"
           ]
         },
-        "id": 3835,
+        "id": 3846,
         "name": "PragmaDirective",
         "src": "36:24:6"
       },
@@ -261,10 +261,10 @@
           "documentation": null,
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            3847
+            3858
           ],
           "name": "IUniswapV2Callee",
-          "scope": 3848
+          "scope": 3859
         },
         "children": [
           {
@@ -280,7 +280,7 @@
               ],
               "name": "uniswapV2Call",
               "overrides": null,
-              "scope": 3847,
+              "scope": 3858,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -294,7 +294,7 @@
                       "mutability": "mutable",
                       "name": "sender",
                       "overrides": null,
-                      "scope": 3846,
+                      "scope": 3857,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -308,12 +308,12 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 3836,
+                        "id": 3847,
                         "name": "ElementaryTypeName",
                         "src": "118:7:6"
                       }
                     ],
-                    "id": 3837,
+                    "id": 3848,
                     "name": "VariableDeclaration",
                     "src": "118:14:6"
                   },
@@ -323,7 +323,7 @@
                       "mutability": "mutable",
                       "name": "amount0",
                       "overrides": null,
-                      "scope": 3846,
+                      "scope": 3857,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -336,12 +336,12 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 3838,
+                        "id": 3849,
                         "name": "ElementaryTypeName",
                         "src": "134:4:6"
                       }
                     ],
-                    "id": 3839,
+                    "id": 3850,
                     "name": "VariableDeclaration",
                     "src": "134:12:6"
                   },
@@ -351,7 +351,7 @@
                       "mutability": "mutable",
                       "name": "amount1",
                       "overrides": null,
-                      "scope": 3846,
+                      "scope": 3857,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -364,12 +364,12 @@
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 3840,
+                        "id": 3851,
                         "name": "ElementaryTypeName",
                         "src": "148:4:6"
                       }
                     ],
-                    "id": 3841,
+                    "id": 3852,
                     "name": "VariableDeclaration",
                     "src": "148:12:6"
                   },
@@ -379,7 +379,7 @@
                       "mutability": "mutable",
                       "name": "data",
                       "overrides": null,
-                      "scope": 3846,
+                      "scope": 3857,
                       "stateVariable": false,
                       "storageLocation": "calldata",
                       "type": "bytes",
@@ -392,17 +392,17 @@
                           "name": "bytes",
                           "type": "bytes"
                         },
-                        "id": 3842,
+                        "id": 3853,
                         "name": "ElementaryTypeName",
                         "src": "162:5:6"
                       }
                     ],
-                    "id": 3843,
+                    "id": 3854,
                     "name": "VariableDeclaration",
                     "src": "162:19:6"
                   }
                 ],
-                "id": 3844,
+                "id": 3855,
                 "name": "ParameterList",
                 "src": "117:65:6"
               },
@@ -413,22 +413,22 @@
                   ]
                 },
                 "children": [],
-                "id": 3845,
+                "id": 3856,
                 "name": "ParameterList",
                 "src": "191:0:6"
               }
             ],
-            "id": 3846,
+            "id": 3857,
             "name": "FunctionDefinition",
             "src": "95:97:6"
           }
         ],
-        "id": 3847,
+        "id": 3858,
         "name": "ContractDefinition",
         "src": "62:132:6"
       }
     ],
-    "id": 3848,
+    "id": 3859,
     "name": "SourceUnit",
     "src": "36:159:6"
   },
@@ -437,8 +437,8 @@
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.4",
-  "updatedAt": "2021-03-23T02:28:09.622Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-02-21T23:54:11.777Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
