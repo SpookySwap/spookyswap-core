@@ -23,10 +23,13 @@
     "node": ">=10"
   },
   "devDependencies": {
+    "@hashgraph/sdk": "2.10.0-beta.1",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
-    "dotenv": "^8.2.0",
+    "chai-bignumber": "^3.0.0",
+    "chai-bn": "^0.2.1",
+    "dotenv": "^8.6.0",
     "ethereum-waffle": "^2.4.1",
     "ethereumjs-util": "^6.2.0",
     "mocha": "^6.2.2",
