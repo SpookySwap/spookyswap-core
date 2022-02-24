@@ -146,7 +146,7 @@ async function main() {
     // If you need to deploy the contract, uncomment this section and pass in a build directory containing the compiled smart contracts
     //
     // if(!process.argv[2]) {
-    //     console.log('\nUsage: node main.js <absolute path to build directory containing yarn compile output JSON>\n');
+    //     console.log('\nUsage: node deploy.js <absolute path to build directory containing yarn compile output JSON>\n');
     //     exit();
     // }
     //
