@@ -1,9 +1,9 @@
 # SpookySwap
 
 
-These are the core contracts of SpookySwap. In-depth documentation can be found at [docs.spookyswap.finance] (https://docs.spookyswap.finance).
+These are the core contracts of SpookySwap. In-depth documentation can be found at [docs.spooky.fi] (https://docs.spooky.fi).
 
-Originally a fork of Uniswap V2, see In-depth documentation at [uniswap.org](https://uniswap.org/docs).
+Originally a fork of Uniswap V2, see In-depth documentation at [uniswap.org](https://docs.uniswap.org/).
 
 The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@uniswap/v2-core@latest/).
 
